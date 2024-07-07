@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="NewGame.css" />
+	</head>
+	<body>
+		
+		<div class="Game">
+			<div class="NewButton">
+				<a href="index.html" class="New" id="newGameButton"  onclick="Setmode()">New Game</a>
+			</div>
+        
+			<h1 class="Guess" id="resultText">
+				<big><b>!! ·Your Guess· !!</b></big>
+			</h1>
+
+			<input
+				type="number"
+				min="1"
+				max="100"
+				class="Input"
+				id="numberInput"
+				name="numberInput"
+				placeholder="Enter Your Number"
+				onchange="compareGuess()"
+			/>
+
+			<section class="State">
+				<div class="info">
+					<p>Number of Total Attempts:</p>
+					<span class="Attempt">0</span>
+				</div>
+				<div class="info">
+					<p>Number of Previous Guesses:</p>
+					<span class="Guesses">0</span>
+				</div>
+			</section>
+		</div>
+
+		<script src="NewGame.js"></script>
+
+
+
+
+
+
+
+
+
+
+		
+		<!-- <script src="New_setmode.js"></script> -->
+	</body>
+</html>
