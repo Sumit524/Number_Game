@@ -44,7 +44,10 @@ function compareGuess() {
         
       }
    
-
+      if(usernumber>100){
+          console.log("Please guess the number between 1 to 100");
+           userinput.value = " ";
+          
     if (usernumber > computerguess) {
         resultText.innerHTML = "Your Guess is High 😯";
         userinput.value = " ";
